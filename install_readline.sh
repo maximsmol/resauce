@@ -1,0 +1,1 @@
+stack install readline --flag readline:"--extra-include-dirs=/usr/local/Cellar/readline/7.0.3_1/include/ --extra-lib-dirs=/usr/local/Cellar/readline/7.0.3_1/lib/ --configure-option=--with-readline-includes=/usr/local/Cellar/readline/7.0.3_1/inc‌​lude/ --configure-option=--with-readline-libraries=/usr/local/Cellar/readline/7.0.3_1/lib/"

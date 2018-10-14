@@ -1,0 +1,51 @@
+-- This file has been generated from package.yaml by hpack version 0.20.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: f0bd6e8822681560353360a014a00011d140e829cc4ffad113257c9e96736b4d
+
+name:           resauce
+version:        0.1.0
+license:        MIT
+license-file:   license.txt
+build-type:     Simple
+cabal-version:  >= 1.10
+
+library
+  hs-source-dirs:
+      src/lib
+  ghc-options: -Weverything -Wno-safe
+  build-depends:
+      base
+    , binary
+    , bytestring
+  exposed-modules:
+      Network.SourceRCON.RawPacket
+      Network.SourceRCON.ClientPacket
+      Network.SourceRCON.ServerPacket
+      Network.SourceRCON.SplitHelperPacket
+      Network.SourceRCON.Handle
+  other-modules:
+      Network.SourceRCON.Util.Size
+      Network.SourceRCON.Util.Type
+      Paths_resauce
+  default-language: Haskell2010
+
+executable resauce
+  main-is: Main.hs
+  hs-source-dirs:
+      src/cli
+  ghc-options: -Weverything -Wno-safe
+  build-depends:
+      base
+    , binary
+    , bytestring
+    , haskeline
+    , network
+    , random
+    , resauce
+    , split
+    , transformers
+  other-modules:
+      Paths_resauce
+  default-language: Haskell2010
