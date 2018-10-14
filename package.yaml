@@ -1,0 +1,37 @@
+name: resauce
+version: 0.1.0
+license: MIT
+license-file: license.txt
+
+library:
+  source-dirs: src/lib
+  dependencies:
+  - base
+  - binary
+  - bytestring
+  exposed-modules:
+  - Network.SourceRCON.RawPacket
+  - Network.SourceRCON.ClientPacket
+  - Network.SourceRCON.ServerPacket
+  - Network.SourceRCON.SplitHelperPacket
+  - Network.SourceRCON.Handle
+  ghc-options:
+    - -Weverything
+    - -Wno-safe
+
+executable:
+  source-dirs: src/cli
+  main: Main.hs
+  dependencies:
+  - base
+  - binary
+  - bytestring
+  - haskeline
+  - network
+  - random
+  - resauce
+  - split
+  - transformers
+  ghc-options:
+    - -Weverything
+    - -Wno-safe
