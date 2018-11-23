@@ -1,15 +1,16 @@
--- This file has been generated from package.yaml by hpack version 0.20.0.
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.0.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: f0bd6e8822681560353360a014a00011d140e829cc4ffad113257c9e96736b4d
+-- hash: db8b8c9a5646d6bfe5c4b7fb9e4c98e7dd3a2c282fb452609fb4f3a31d9c0e0e
 
 name:           resauce
 version:        0.1.0
 license:        MIT
 license-file:   license.txt
 build-type:     Simple
-cabal-version:  >= 1.10
 
 library
   hs-source-dirs:
