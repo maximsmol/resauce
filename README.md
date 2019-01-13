@@ -2,6 +2,8 @@ resauce is an implementation of the Source engine [remote console (RCON) protoco
 
 ## Status
 
+[![Video](vid.png)](https://youtu.be/CGSiGx1BcgE)
+
 ![Screenshot](screenshot.png)
 
 The screenshot shows resauce connected to a TF2 server, showing the results of issuing a `status` command.
